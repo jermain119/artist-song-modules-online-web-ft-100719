@@ -10,11 +10,12 @@ class Artist
   def initialize
     @@artists << self
     @songs = []
-    binding.pry 
+    
   end
 
   def self.find_by_name(name)
     @@artists.detect{|a| a.name == name}
+    binding.pry
   end
 
   def self.all
